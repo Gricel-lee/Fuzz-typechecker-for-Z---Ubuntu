@@ -19,7 +19,7 @@ Then (https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#cygwin):
 sudo apt-get install tcl
 ```
 
--Clone Fuzz, install Bison, gawk, gcc (https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation)
+-Clone Fuzz, install Bison, gawk, gcc, flex (https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation)
 ```
 git clone https://github.com/Spivoxity/fuzz.git
 sudo -i
@@ -29,6 +29,16 @@ sudo apt-get install gawk
 apt-get clean
 sudo apt install build-essential
 gcc --version
+sudo apt-get clean
+
+```
+
+However, an error appears:
+
+Trying another version
+```
+sudo apt uninstall gcc
+sudo apt install gcc-8
 ```
 
 
