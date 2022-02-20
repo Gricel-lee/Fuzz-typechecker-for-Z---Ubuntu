@@ -1,4 +1,4 @@
-# Fuzz-typechecker-for-Z---Ubuntu
+# Fuzz - typechecker Installation for Z Ubuntu
 Installation of Fuzz typechecker for Z in Ubuntu 20.04
 
 ## Do the following commands before starting with Fuzz
@@ -152,3 +152,5 @@ sudo apt install build-essential  // to install gcc
 gcc --version
 sudo apt-get clean
 ```
+
+Another possible patch (and only question I found on Internet to this problem): https://bugzilla.redhat.com/show_bug.cgi?id=336471 
