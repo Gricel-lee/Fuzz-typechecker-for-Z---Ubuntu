@@ -1,5 +1,7 @@
 # Fuzz - typechecker Installation for Z Ubuntu
-https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation
+Fuzz doc page: https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation
+Fuzz manual: https://spivey.oriel.ox.ac.uk/wiki/images-corner/c/cc/Fuzzman.pdf
+
 
 ## Installation of Fuzz typechecker for Z in Ubuntu 20.04
 In the terminal, do:
