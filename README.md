@@ -1,20 +1,8 @@
 # Fuzz - typechecker Installation for Z Ubuntu
-Installation of Fuzz typechecker for Z in Ubuntu 20.04
+https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation
 
-## Do the following commands before starting with Fuzz
-
-
-```
-
-- Download ![image](https://user-images.githubusercontent.com/63869574/154747372-4e92fff8-9eb3-4477-b40f-2ce43bf834ba.png) from 
-https://tug.org/texlive/acquire-netinstall.html
-Then (https://www.tug.org/texlive/doc/texlive-en/texlive-en.html#cygwin):
-- Unzip and go to folder Then:
-```sudo perl /install-tl
-sudo apt-get install tcl
-```
-
--Clone Fuzz, install Bison, gawk, gcc, flex (https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation)
+## Installation of Fuzz typechecker for Z in Ubuntu 20.04
+In the terminal, do:
 ```
 git clone https://github.com/Spivoxity/fuzz.git
 cd fuzz/
@@ -23,7 +11,16 @@ autoconf
 ./configure
 make
 ```
-If this does not work, try modify file src\Makefile.in, line 34 to ```libdir = ./src```, or  to:
+
+If this does not work, try modifing the file src\Makefile.in, line 34 to ```libdir = ./src```. Then do 1):
+```
+./configure
+make clean
+make
+```
+
+If this still sending an error, replace src\Makefile.in for:
+
 ```
 #
 # src/Makefile.in
@@ -112,13 +109,11 @@ $(FUZZ): fuzz.h proto.h zparse.h absyn.h
 
 force:
 ```
-Then do 
+
+Do the next and then re-do 1).
 ```
 sudo apt-get install llvm
 sudo apt-get install clang
-./configure
-make clean
-make
 ```
 
 # Run
@@ -131,9 +126,9 @@ Or create environmental variable.
 
 
 
-## Side notes
+# Side notes (in case it still not working, this may be helpful)
 
-Install Cygmin dependencies (not sure if this step is neccesary, https://www.tug.org/texlive/quickinstall.html , http://www.delorie.com/howto/cygwin/fuzz-for-z-install-use-cygwin.html)
+Install Cygmin dependencies (not sure if this step was neccesary, https://www.tug.org/texlive/quickinstall.html , http://www.delorie.com/howto/cygwin/fuzz-for-z-install-use-cygwin.html)
 ```sudo apt-get update -y
 sudo apt-get install -y fontconfig-config
 sudo apt install ghostscript
@@ -141,7 +136,7 @@ sudo apt-get install -y libxaw7-dev
 sudo apt-get install libncurses5-dev libncursesw5-dev
 ```
 
-Also
+Also done before installation (may be useful)
 ```
 sudo -i // to get to root
 apt-get dist-upgrade
@@ -150,6 +145,8 @@ sudo apt-get install gawk
 apt-get clean
 sudo apt install build-essential  // to install gcc
 gcc --version
+sudo perl /install-tl
+sudo apt-get install tcl
 sudo apt-get clean
 ```
 
