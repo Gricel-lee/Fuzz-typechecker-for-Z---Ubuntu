@@ -1,7 +1,8 @@
 # Z notes
 
 # Schema cardinality
-For a simple schema **master : DATABASE**, the field "master" leads to a single DATABASE. https://www.cs.umd.edu/~mvz/handouts/z-manual.pdf
+For a simple schema **master : DATABASE**, the field "master" leads to a single DATABASE.
+https://www.cs.umd.edu/~mvz/handouts/z-manual.pdf
 
 ![image](https://user-images.githubusercontent.com/63869574/156020748-da18629d-119a-4ded-b6fe-933a1367f384.png)
 
