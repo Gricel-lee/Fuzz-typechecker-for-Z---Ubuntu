@@ -1,4 +1,4 @@
-# Fuzz - typechecker Installation for Z Ubuntu
+# Fuzz - typechecker for Z - Installation Ubuntu and Mac
 Fuzz doc page: https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Installation
 
 Fuzz manual: https://spivey.oriel.ox.ac.uk/wiki/images-corner/c/cc/Fuzzman.pdf
