@@ -3,8 +3,9 @@ Fuzz doc page: https://spivey.oriel.ox.ac.uk/corner/Fuzz_typechecker_for_Z#Insta
 
 Fuzz manual: https://spivey.oriel.ox.ac.uk/wiki/images-corner/c/cc/Fuzzman.pdf
 
+Successfully installed on Ubuntu 20.04 and macOS Monterey 12.3.1.
 
-## Installation of Fuzz typechecker for Z in Ubuntu 20.04
+## Installation of Fuzz typechecker for Z
 In the terminal, do:
 ```
 git clone https://github.com/Spivoxity/fuzz.git
