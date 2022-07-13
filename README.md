@@ -14,6 +14,7 @@ autoconf
 ./configure
 make
 ```
+(in Mac, install autoconf with ```brew install autoconf automake```.
 
 If this does not work, try modifing the file src\Makefile.in, line 34 to ```libdir = ./src```. Then do 1):
 ```
