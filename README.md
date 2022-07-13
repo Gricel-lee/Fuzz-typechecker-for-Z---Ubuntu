@@ -121,6 +121,8 @@ sudo apt-get install llvm
 sudo apt-get install clang
 ```
 
+(In Mac, do ```arch -arm64 brew install llvm@11``` instead.)
+
 # Run
 From the fuzz folder you can run the example in tex folder via:
 
