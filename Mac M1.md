@@ -4,3 +4,4 @@ When installing, if an error persists but it compiled the binary files after mak
 ./fuzz -p fuzzlib 
 ```
 from inside the folder ```pathToFuzz/fuzz/src```
+(in my case ```/Users/grisv/ProgramsGris/fuzz/src```)
