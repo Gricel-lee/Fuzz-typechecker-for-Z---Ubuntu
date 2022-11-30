@@ -134,7 +134,14 @@ From the fuzz folder you can run the example in tex folder via:
 
 Or create environmental variable.
 
+# Work around - tried in Mac
+When installing, if an error persists but it compiled the binary files (make), try running fuzzlib from ```fuzz/src```:
 
+```
+cd fuzz/src
+./fuzz -p fuzzlib 
+```
+It should enter fuzz, so you can run fuzz now.
 
 
 # Side notes (in case it still not working, this may be helpful)
