@@ -6,6 +6,8 @@ Fuzz manual: https://spivey.oriel.ox.ac.uk/wiki/images-corner/c/cc/Fuzzman.pdf
 Successfully installed on Ubuntu 20.04 and macOS Monterey 12.3.1.
 
 ## Installation of Fuzz typechecker for Z
+Make sure you have Latex (Linux Tex, MacTex, etc) installed before starting.
+
 In the terminal, do:
 ```
 git clone https://github.com/Spivoxity/fuzz.git
