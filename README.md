@@ -15,8 +15,11 @@ autoconf
 ./configure
 make
 ```
-(in Mac, install autoconf with ```brew install autoconf automake```.
+(in Mac, install autoconf with ```brew install autoconf automake```
 or ```brew install make``` and run it as ```gmake```.
+
+If brew fails, try first:
+```rm -rf $(brew --repo homebrew/core)``` and then ```brew tap homebrew/core```. Retry brew install...)
 
 If this does not work, try modifing the file src\Makefile.in, line 34 to ```libdir = ./src```. Then do 1):
 ```
