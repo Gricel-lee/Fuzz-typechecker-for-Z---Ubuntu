@@ -14,3 +14,6 @@ For sets, **p : PERSON** would mean the set of all PERSONs. E.g.:
 
 ![image](https://user-images.githubusercontent.com/63869574/156032939-8892d158-1118-42f1-b5fb-2a68b3f84475.png)
 
+
+# Syntax error at symbol "\in"
+When this error appears in fuzz, check : instead of \in.
