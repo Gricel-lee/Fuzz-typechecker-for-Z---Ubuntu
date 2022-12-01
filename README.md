@@ -136,6 +136,10 @@ From the fuzz folder you can run the example in tex folder via:
 
 Or create environmental variable.
 
+
+# Error/warning is fine
+Sometimes even when a waring appears, you can run: ```./src/fuzz ./tex/example.tex``` and it should work.
+
 # Work around - tried in Mac
 When installing, if an error persists but it compiled the binary files (make), try running fuzzlib from ```fuzz/src```:
 
