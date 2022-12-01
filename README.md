@@ -135,7 +135,11 @@ From the fuzz folder you can run the example in tex folder via:
 ![image](https://user-images.githubusercontent.com/63869574/154824140-7059c932-9c07-441f-a0d5-9c0fb8c177f6.png)
 
 Or create environmental variable.
-
+In Mac ```fuzz``` command worked inside the fuzz folder when added to nano ~/.bash_profile:
+```
+export PATH="/Users/.../fuzz/src:$PATH"
+export PATH="/Users/.../fuzz:$PATH"
+```
 
 # Error/warning is fine
 Sometimes even when a waring appears, you can run: ```./src/fuzz ./tex/example.tex``` and it should work.
