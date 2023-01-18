@@ -148,7 +148,7 @@ Sometimes even when a waring appears, you can run: ```./src/fuzz ./tex/example.t
 If this legend appears, you can add the prelude file "fuzzlib" manually as described in ```fuzz -help```: fuzz [-p file] file.
 
 ```
-fuzz -p src/fuzzlib ./main.tex
+fuzz -p src/fuzzlib ./Example/main.tex
 ```
 
 This is: 
