@@ -144,6 +144,19 @@ export PATH="/Users/.../fuzz:$PATH"
 # Error/warning is fine
 Sometimes even when a waring appears, you can run: ```./src/fuzz ./tex/example.tex``` and it should work.
 
+# ERROR " fuzz: can't read prelude file /fuzzlib " 
+If this legend appears, you can add the prelude file "fuzzlib" manually as described in ```fuzz -help```: fuzz [-p file] file.
+
+```
+fuzz -p src/fuzzlib ./main.tex
+```
+
+This is: 
+- path to fuzz(in this example is already added as an environmental variable)
+- -p adds pelude file
+- path to fuzzlib
+- path to .tex file
+
 # Work around - tried in Mac
 When installing, if an error persists but it compiled the binary files (make), try running fuzzlib from ```fuzz/src```:
 
